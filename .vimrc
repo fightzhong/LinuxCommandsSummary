@@ -21,6 +21,9 @@ syntax on
 " 高亮显示匹配的括号
 set showmatch
 
+" 取消输入错误的时候的bell声音
+set vb
+
 " 允许折叠
 set foldenable
 
