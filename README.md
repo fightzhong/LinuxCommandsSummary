@@ -125,6 +125,8 @@ Shell Summary
     命令 2>> a.txt: 仅仅将命令的错误结果写入a.txt 
     命令 &>> a.txt: 将命令的正确和错误结果都写入a.txt
     命令 &>> success.txt 2>> error.txt: 将命令的正确结果都写入success.txt, 将命令的错误结果都写入error.txt
+
+    回收站: /dev/null
     ```
 #### 逻辑与/逻辑或/分号
   - 命令A && 命令B: 只有命令A正确执行才会执行命令B
@@ -493,6 +495,7 @@ Shell Summary
   - passwd -l 用户名: 锁定用户, 使其无法登陆, 在/etc/shadow文件指定位置添加!!来使得密码无效
   - passwd -u 用户名: 解锁用户  
   - passwd -S 用户名: 查看用户的密码状态信息
+  - echo xxx | passwd --stdin 用户名: 将数据流中的文字设置为该用户的密码 
 #### chage: 设置/修改用户的密码信息(同passwd功能类似)
   -  chage -d 第几天 用户名: 修改用户的密码的最后修改时间, 设置为0可以强制用户第一次登陆时修改密码
   - chage -l 用户名: 查看用户的密码状态, 比passwd更加的详细
