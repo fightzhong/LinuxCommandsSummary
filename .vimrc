@@ -1,3 +1,4 @@
+" Xshell 设置: Properties => Appearance => Color Scheme选择Pastel on Black (第6个) => Edit编辑该外观 => ANSI Colors选择深蓝色
 " 设置行号
 set number
 
