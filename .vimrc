@@ -36,7 +36,7 @@ set foldmethod=manual
 set encoding=utf-8
 
 " 映射复制
-vmap <C-c> "+y
+" vmap <C-c> "+y
 
 " 新建.sh, h, .java文件自动插入文件头
 "autocmd BufNewFile *.sh,*.java exec ":call SetTitle()"
