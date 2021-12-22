@@ -1148,6 +1148,8 @@ tar.bz2:
         <1> 输入文件的第2-最后一行的内容: sed -n '2,$p' test.txt
         <2> 在第2行插入HelloWorld: sed '2i HelloWorld' test.txt(这里不用-n)
         <3> 将所有的数字替换为6: sed 's/[0-9]/66/g'
+        <4> 将文件中的aaaa替换为bbbb: sed -in "s/aaaa/bbbb/g" /tuancan/account-service/operate.sh
+        替换文件的时候需要带上-i
     ```
 ### 字符处理命令
 #### sort: 对字符串进行排序    
